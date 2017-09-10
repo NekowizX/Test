@@ -98,7 +98,7 @@ wizLoader = (function() {
       daily: {
         sheedId: "1jyP__9G2RqkoUuAT9o0SlwrYrJc_fW7ciiTphX6XuW4",
         gridId: "or1iuun"
-},
+      },
       qte: {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
         gridId: "1"
