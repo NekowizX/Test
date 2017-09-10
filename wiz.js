@@ -80,24 +80,24 @@ wizLoader = (function() {
   wizLoader.option = {
     excelIds: {
      classify: {
-        sheedId: "11cvdYTlJyXYGDFClkG8MqYn4yKmd0eZ8joNF_HPV56k",
-        gridId: "os8hyc1"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       fill: {
-        sheedId: "1pa_czWOHLPdoBTuckxdbjFoFcPqSh4ZLP4qB9LjI7VM",
-        gridId: "o2cw2x5"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       normal: {
-        sheedId: "1aLq_rLTl2SRwfbpL5ti5fOUw_VIopTDORskECJqSTow",
-        gridId: "op44ln6"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       sort: {
-        sheedId: "1VGkwZhZLYHCtLexGn-0gpiIcorQ0rH0ULKirl-sRpeE",
-        gridId: "oskx7l9"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       daily: {
-        sheedId: "1jyP__9G2RqkoUuAT9o0SlwrYrJc_fW7ciiTphX6XuW4",
-        gridId: "or1iuun"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       qte: {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
