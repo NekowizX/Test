@@ -100,8 +100,8 @@ wizLoader = (function() {
         gridId: "or1iuun"
       },
       qte: {
-        sheedId: "1PI9_KO-b9pB6iAa3aN9boaJGx_TVN8DGD-jl23kwRCQ",
-        gridId: "odgqila"
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "1"
       }
     }
   };
