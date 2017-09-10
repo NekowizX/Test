@@ -80,24 +80,24 @@ wizLoader = (function() {
   wizLoader.option = {
     excelIds: {
       classify: {
-        sheedId: "",
-        gridId: ""
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "6"
       },
       fill: {
-        sheedId: "",
-        gridId: ""
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "5"
       },
       normal: {
-        sheedId: "",
-        gridId: ""
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "4"
       },
       sort: {
-        sheedId: "",
-        gridId: ""
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "3"
       },
       daily: {
-        sheedId: "",
-        gridId: ""
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
       },
       qte: {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
