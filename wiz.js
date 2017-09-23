@@ -97,7 +97,7 @@ wizLoader = (function() {
       },
       ox: {
         sheedId: "1BktHsD75dlNaHRYgniYv9vhiCpFNrFS-zmpAbSY8jzs",
-        gridId: "1"
+        gridId: "2"
       },
       qte: {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
@@ -130,7 +130,7 @@ wizLoader = (function() {
       if (tmp[6] === 'oskx7l9') {
         return this._loadNormal([data.feed.entry, '滑動題']);
       }
-      if (tmp[6] === '1') {
+      if (tmp[6] === '2') {
         return this._loadNormal([data.feed.entry, 'OX題']);
       }
       return this._loadNormal([data.feed.entry, 'QTE填空']);
