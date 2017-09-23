@@ -95,9 +95,9 @@ wizLoader = (function() {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
         gridId: "2"
       },
-      daily: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
+      ox: {
+        sheedId: "1BktHsD75dlNaHRYgniYv9vhiCpFNrFS-zmpAbSY8jzs",
+        gridId: "1"
       },
       qte: {
         sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
@@ -130,8 +130,8 @@ wizLoader = (function() {
       if (tmp[6] === 'oskx7l9') {
         return this._loadNormal([data.feed.entry, '滑動題']);
       }
-      if (tmp[6] === 'or1iuun') {
-        return this._loadNormal([data.feed.entry, '複選題']);
+      if (tmp[6] === '1') {
+        return this._loadNormal([data.feed.entry, 'OX題']);
       }
       return this._loadNormal([data.feed.entry, 'QTE填空']);
     }
@@ -169,8 +169,8 @@ wizLoader = (function() {
           if (name === '滑動題') {
             tmp['type'] = '滑動題';
           }
-          if (name === '複選題') {
-            tmp['type'] = '複選題';
+          if (name === 'OX題') {
+            tmp['type'] = 'OX題';
           }
           if (name === 'QTE填空') {
             tmp['type'] = 'QTE填空';
