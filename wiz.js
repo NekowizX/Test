@@ -128,7 +128,7 @@ wizLoader = (function() {
         return this._loadNormal([data.feed.entry, '連連看']);
       }
       if (tmp[6] === 'ott9syt') {
-        return this._loadNormal([data.feed.entry, '多選題']);
+        return this._loadNormal([data.feed.entry, '複選題']);
       }
       if (tmp[6] === 'ood9bzs') {
         return this._loadNormal([data.feed.entry, 'OX題']);
@@ -166,8 +166,8 @@ wizLoader = (function() {
           if (name === '連連看') {
             tmp['type'] = '連連看';
           }
-          if (name === '多選題') {
-            tmp['type'] = '多選題';
+          if (name === '複選題') {
+            tmp['type'] = '複選題';
           }
           if (name === 'OX題') {
             tmp['type'] = 'OX題';
