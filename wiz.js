@@ -92,8 +92,8 @@ wizLoader = (function() {
         gridId: "2"
       },
       sort: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
+        sheedId: "1Bc8YBk8Ft7r1NLlnnPhqENcF-_Sqgxi_dkOMUTwi9R0",
+        gridId: "ott9syt"
       },
       ox: {
         sheedId: "1BktHsD75dlNaHRYgniYv9vhiCpFNrFS-zmpAbSY8jzs",
@@ -127,8 +127,8 @@ wizLoader = (function() {
       if (tmp[6] === 'op44ln6') {
         return this._loadNormal([data.feed.entry, '連連看']);
       }
-      if (tmp[6] === 'oskx7l9') {
-        return this._loadNormal([data.feed.entry, '滑動題']);
+      if (tmp[6] === 'ott9syt') {
+        return this._loadNormal([data.feed.entry, '多選題']);
       }
       if (tmp[6] === 'ood9bzs') {
         return this._loadNormal([data.feed.entry, 'OX題']);
@@ -166,8 +166,8 @@ wizLoader = (function() {
           if (name === '連連看') {
             tmp['type'] = '連連看';
           }
-          if (name === '滑動題') {
-            tmp['type'] = '滑動題';
+          if (name === '多選題') {
+            tmp['type'] = '多選題';
           }
           if (name === 'OX題') {
             tmp['type'] = 'OX題';
