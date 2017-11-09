@@ -100,7 +100,7 @@ wizLoader = (function() {
         gridId: "ood9bzs"
       },
       qte: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        sheedId: "10UXXGpmr29PUhDH1AFmLThk2sivTwprRYIg2W3XBWfg",
         gridId: "1"
       }
     }
