@@ -79,26 +79,6 @@ wizLoader = (function() {
 
   wizLoader.option = {
     excelIds: {
-     classify: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
-      fill: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
-      normal: {
-        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
-        gridId: "2"
-      },
-      sort: {
-        sheedId: "1Bc8YBk8Ft7r1NLlnnPhqENcF-_Sqgxi_dkOMUTwi9R0",
-        gridId: "ott9syt"
-      },
-      ox: {
-        sheedId: "1BktHsD75dlNaHRYgniYv9vhiCpFNrFS-zmpAbSY8jzs",
-        gridId: "ood9bzs"
-      },
       qte: {
         sheedId: "10UXXGpmr29PUhDH1AFmLThk2sivTwprRYIg2W3XBWfg",
         gridId: "1"
@@ -118,21 +98,6 @@ wizLoader = (function() {
     var tmp;
     tmp = data.feed.id.$t.split('/');
     if (tmp.length === 9) {
-      if (tmp[6] === 'os8hyc1') {
-        return this._loadNormal([data.feed.entry, '分類題']);
-      }
-      if (tmp[6] === 'o2cw2x5') {
-        return this._loadNormal([data.feed.entry, '填空題']);
-      }
-      if (tmp[6] === 'op44ln6') {
-        return this._loadNormal([data.feed.entry, '連連看']);
-      }
-      if (tmp[6] === 'ott9syt') {
-        return this._loadNormal([data.feed.entry, '複選題']);
-      }
-      if (tmp[6] === 'ood9bzs') {
-        return this._loadNormal([data.feed.entry, 'OX題']);
-      }
       return this._loadNormal([data.feed.entry, 'QTE填空']);
     }
   };
