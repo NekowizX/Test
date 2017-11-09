@@ -98,7 +98,7 @@ wizLoader = (function() {
     var tmp;
     tmp = data.feed.id.$t.split('/');
     if (tmp.length === 9) {
-      return this._loadNormal([data.feed.entry, 'QTE填空']);
+      return this._loadNormal([data.feed.entry, '四選題']);
     }
   };
 
@@ -137,8 +137,8 @@ wizLoader = (function() {
           if (name === 'OX題') {
             tmp['type'] = 'OX題';
           }
-          if (name === 'QTE填空') {
-            tmp['type'] = 'QTE填空';
+          if (name === '四選題') {
+            tmp['type'] = '四選題';
           }
           tmp['fulltext'] = ("" + tmp['question'] + tmp['answer']).toLowerCase();
           db.push(tmp);
