@@ -156,7 +156,7 @@ wizLoader = (function() {
       $("#load-count").text('共讀取了 ' + this.data.db().count() + ' 個問題。');
       $("#result-limit").html("<span class='hidden-xs'>僅顯示</span>前 <a href='#' data-toggle='modal' data-target='#setting-modal'>" + (Setting.get('searchMaxResult')) + " </a>個<span class='hidden-xs'>結果</span>。");
     } else {
-      $("#loaded-count").text(this.data.db().count());
+      $("#loaded-count").text(this.loadCount + '///' + Object.keys(this.option.excelIds).length);
     }
   };
 
