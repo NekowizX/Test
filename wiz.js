@@ -121,8 +121,8 @@ wizLoader = (function() {
           tmp = {};
         }
         tmp[keys[col]] = entry.content.$t;
-      /*  if (col === 3) {
-          if (name === '四選題') {
+        if (col === 3) {
+        /*  if (name === '四選題') {
             tmp['type'] = '四選題';
           }*/
           tmp['fulltext'] = ("" + tmp['question'] + tmp['answer']).toLowerCase();
