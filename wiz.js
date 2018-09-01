@@ -117,9 +117,9 @@ wizLoader = (function() {
       }
       col = parseInt(entry.gs$cell.col);
       if (col >= 1 && col <= 3) {
-        if (col === 1) {
+        /*if (col === 1) {
           tmp = {};
-        }
+        }*/
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
           if (name === '分類題') {
