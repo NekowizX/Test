@@ -129,6 +129,7 @@ wizLoader = (function() {
           db.push(tmp);
         }
       }
+      $("#loaded-count").text(this.data.db().count() + '///' + Object.keys(this.option.excelIds).length);
     }
     wizLoader.data.db.insert(db);
     return this._loadComplete();
