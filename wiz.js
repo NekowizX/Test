@@ -122,6 +122,21 @@ wizLoader = (function() {
         }
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
+          if (name === '分類題') {
+            tmp['type'] = '分類題';
+          }
+          if (name === '填空題') {
+            tmp['type'] = '填空題';
+          }
+          if (name === '連連看') {
+            tmp['type'] = '連連看';
+          }
+          if (name === '複選題') {
+            tmp['type'] = '複選題';
+          }
+          if (name === 'OX題') {
+            tmp['type'] = 'OX題';
+          }
           if (name === '四選題') {
             tmp['type'] = '四選題';
           }
@@ -137,11 +152,11 @@ wizLoader = (function() {
   wizLoader._loadComplete = function() {
     this.loadCount++;
     if (this.loadCount === Object.keys(this.option.excelIds).length) {
-     // $("#overlay-loading").remove();
-      $("#load-count").text('共讀取 ' + this.data.db().count() + ' 個問題。');
+      $("#overlay-loading").remove();
+      $("#load-count").text('共讀取了 ' + this.data.db().count() + ' 個問題。');
       $("#result-limit").html("<span class='hidden-xs'>僅顯示</span>前 <a href='#' data-toggle='modal' data-target='#setting-modal'>" + (Setting.get('searchMaxResult')) + " </a>個<span class='hidden-xs'>結果</span>。");
     } else {
-      $("#loaded-count").text(this.data.db().count() + '///' + Object.keys(this.option.excelIds).length);
+      $("#loaded-count").text(this.loadCount + '/' + Object.keys(this.option.excelIds).length);
     }
   };
 
