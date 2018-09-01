@@ -110,16 +110,16 @@ wizLoader = (function() {
     col = 0;
     keys = ['', '', 'question', 'answer'];
     db = [];
-   /* for (index in data) {
+    for (index in data) {
       entry = data[index];
       if (parseInt(entry.gs$cell.row) <= 1) {
         continue;
-      }*/
+      }
       col = parseInt(entry.gs$cell.col);
       if (col >= 1 && col <= 3) {
-       /* if (col === 1) {
+        if (col === 1) {
           tmp = {};
-        }*/
+        }
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
           if (name === '四選題') {
