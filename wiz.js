@@ -103,12 +103,11 @@ wizLoader = (function() {
   };
 
   wizLoader._loadNormal = function(indata) {
-    var col, data, db, entry, index, keys, name, tmp, xcount;
+    var col, data, db, entry, index, keys, name, tmp;
     data = indata[0];
     name = indata[1];
     tmp = {};
     col = 0;
-    xcount = 0;
     keys = ['', '', 'question', 'answer'];
     db = [];
     for (index in data) {
@@ -130,8 +129,6 @@ wizLoader = (function() {
           db.push(tmp);
         }
       }
-      xcount++;
-      $("#loaded-count").text(xcount);
     }
     wizLoader.data.db.insert(db);
     return this._loadComplete();
@@ -140,7 +137,7 @@ wizLoader = (function() {
   wizLoader._loadComplete = function() {
     this.loadCount++;
     if (this.loadCount === Object.keys(this.option.excelIds).length) {
-      $("#overlay-loading").remove();
+     // $("#overlay-loading").remove();
       $("#load-count").text('共讀取 ' + this.data.db().count() + ' 個問題。');
       $("#result-limit").html("<span class='hidden-xs'>僅顯示</span>前 <a href='#' data-toggle='modal' data-target='#setting-modal'>" + (Setting.get('searchMaxResult')) + " </a>個<span class='hidden-xs'>結果</span>。");
     } else {
