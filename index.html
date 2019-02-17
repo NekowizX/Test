@@ -53,10 +53,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="https://Nekowizx.github.io/QuizJP/">首頁 <span class="sr-only">(current)</span></a></li>
                         <li><a href="#" data-toggle="modal" data-target="#material-modal">觀賞區</a></li>
-                        <li><a href="http://quiz-wiz.com/" target="_blank">日文題庫</a></li>
+                        <li><a href="http://quiz-wiz.com/" target="_blank">來源題庫</a></li>
+                        <li><a href="https://nekowizx.github.io/Quiz/" target="_blank">一般題庫</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">填寫表單<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
+                                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScNhncNFILddtv-aCqGD6fvG2dB_Oz9RdJUIplQnTB1mkuU1A/viewform">QTE填空</a></li>
+                                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyEcVNTY06u-0XyXFyEK0VTzYIYxiW31xJVY5DTWDgJL5_jA/viewform">OX題</a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#" data-toggle="modal" data-target="#post-modal">填寫表單</a></li> -->
@@ -70,7 +73,6 @@
 
             <div class="container">
                 <br />
-                <div class="alert alert-info" role="alert">本頁面為日版題庫，<a href="http://chrisliuqq.github.io/wiz-tw/">台版題庫請點此</a></div>
 
                 <div id="page-menu" class="pull-right" role="tabpanel">
                     <ul class="nav nav-tabs" role="tablist">
@@ -90,7 +92,16 @@
                             <input type="text" id="inputKeyword" class="form-control" placeholder="可輸入「知識の玄人」或「知識 玄人」進行搜尋" required autofocus>
                             <div class="">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" class="from-source" name="from[]" value="四選題" checked> 四選題
+                                    <input type="checkbox" class="from-source" name="from[]" value="QTE填空題" checked> QTE填空題
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" class="from-source" name="from[]" value="QTE複選題" > QTE複選題
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" class="from-source" name="from[]" value="OX題" > OX題
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" class="from-source" name="from[]" value="排序題" > 排序題
                                 </label>
                             </div>
                         </form>
@@ -106,7 +117,16 @@
                             <h2 class="form-signin-heading">題庫列表</h2>
                             <div class="">
                                 <label class="radio-inline">
-                                    <input type="radio" class="list-type" name="list-type" value="四選題"> 四選題
+                                    <input type="radio" class="list-type" name="list-type" value="QTE填空題"> QTE填空題
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" class="list-type" name="list-type" value="QTE複選題"> QTE複選題
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" class="list-type" name="list-type" value="OX題"> OX題
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" class="list-type" name="list-type" value="排序題"> 排序題
                                 </label>
                             </div>
                             <div class="alert alert-info" role="alert">
@@ -153,10 +173,7 @@
         <div id="overlay-loading">
             <div id="overlay-loading-content">
                 <i class="fa fa-spinner fa-pulse fa-4x"></i>
-                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count"</span>）</div>
-                 <div class="progress">
-                    <div id="process-bar" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                 </div>
+                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/6</span>）</div>
             </div>
         </div>
 
@@ -222,16 +239,8 @@
                     </div>
                     <div class="modal-body">
                         <dl>
-                            <dt>[2017-6-30] 新增QTE題庫</dt>
-                            <dd>QTE獨立出來，方便整理</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2017-3-3] 調整素材時間表，修改預設題型</dt>
-                            <dd>與原版[2017-01-20]更新類似，調整預設為連連看(魔導盃)</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2016-11-12] 重新改變架構，與原版[2016-4-15]相似</dt>
-                            <dd>混合 Google spreadsheets與新版架構</dd>
+                            <dt>新增題庫</dt>
+                            <dd>QTE題庫獨立</dd>
                         </dl>
                     </div>
                 </div>
