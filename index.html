@@ -16,12 +16,12 @@
         <meta content="website" property="og:type">
         <meta content="魔法使いと黒猫のウィズ Quiz Searcher" property="og:title">
         <meta content="魔法使いと黒猫のウィズ Quiz Searcher" name="twitter:title">
-        <meta content="快速從由題庫中搜尋《魔法使いと黒猫のウィズ》的答案！" name="description">
-        <meta content="快速從由題庫中搜尋《魔法使いと黒猫のウィズ》的答案！" property="og:description">
-        <meta content="快速從由題庫中搜尋《魔法使いと黒猫のウィズ》的答案！" name="twitter:description">
-        <meta content="https://Nekowizx.github.io/QuizJP/logo.jpg" property="og:image">
-        <meta content="https://Nekowizx.github.io/QuizJP/logo.jpg" name="twitter:image:src">
-        <meta content="https://Nekowizx.github.io/QuizJP/" property="og:url">
+        <meta content="嘘にゃ。" name="description">
+        <meta content="嘘にゃ。" property="og:description">
+        <meta content="嘘にゃ。" name="twitter:description">
+        <meta content="https://Nekowizx.github.io/Quiz/logo.png" property="og:image">
+        <meta content="https://Nekowizx.github.io/Quiz/logo.png" name="twitter:image:src">
+        <meta content="https://Nekowizx.github.io/Quiz/" property="og:url">
         <link media="all" type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
         <link media="all" type="text/css" rel="stylesheet" href="wiz.css">
@@ -54,12 +54,10 @@
                         <li class="active"><a href="https://Nekowizx.github.io/QuizJP/">首頁 <span class="sr-only">(current)</span></a></li>
                         <li><a href="#" data-toggle="modal" data-target="#material-modal">觀賞區</a></li>
                         <li><a href="http://quiz-wiz.com/" target="_blank">來源題庫</a></li>
-                        <li><a href="https://nekowizx.github.io/Quiz/" target="_blank">一般題庫</a></li>
+                        <li><a href="https://nekowizx.github.io/QuizJP/" target="_blank">特殊題庫</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">填寫表單<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScNhncNFILddtv-aCqGD6fvG2dB_Oz9RdJUIplQnTB1mkuU1A/viewform">QTE填空</a></li>
-                                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyEcVNTY06u-0XyXFyEK0VTzYIYxiW31xJVY5DTWDgJL5_jA/viewform">OX題</a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#" data-toggle="modal" data-target="#post-modal">填寫表單</a></li> -->
@@ -92,16 +90,7 @@
                             <input type="text" id="inputKeyword" class="form-control" placeholder="可輸入「知識の玄人」或「知識 玄人」進行搜尋" required autofocus>
                             <div class="">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" class="from-source" name="from[]" value="QTE填空題" checked> QTE填空題
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" class="from-source" name="from[]" value="QTE複選題" > QTE複選題
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" class="from-source" name="from[]" value="OX題" > OX題
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" class="from-source" name="from[]" value="排序題" > 排序題
+                                    <input type="checkbox" class="from-source" name="from[]" value="四選題" checked> 四選題
                                 </label>
                             </div>
                         </form>
@@ -117,16 +106,7 @@
                             <h2 class="form-signin-heading">題庫列表</h2>
                             <div class="">
                                 <label class="radio-inline">
-                                    <input type="radio" class="list-type" name="list-type" value="QTE填空題"> QTE填空題
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" class="list-type" name="list-type" value="QTE複選題"> QTE複選題
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" class="list-type" name="list-type" value="OX題"> OX題
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" class="list-type" name="list-type" value="排序題"> 排序題
+                                    <input type="radio" class="list-type" name="list-type" value="四選題"> 四選題
                                 </label>
                             </div>
                             <div class="alert alert-info" role="alert">
@@ -173,7 +153,7 @@
         <div id="overlay-loading">
             <div id="overlay-loading-content">
                 <i class="fa fa-spinner fa-pulse fa-4x"></i>
-                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/6</span>）</div>
+                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/1</span>）</div>
             </div>
         </div>
 
@@ -239,8 +219,16 @@
                     </div>
                     <div class="modal-body">
                         <dl>
-                            <dt>新增題庫</dt>
-                            <dd>QTE題庫獨立</dd>
+                            <dt>[2017-6-30] 新增QTE題庫</dt>
+                            <dd>QTE獨立出來，方便整理</dd>
+                        </dl>
+                        <dl>
+                            <dt>[2017-3-3] 調整素材時間表，修改預設題型</dt>
+                            <dd>與原版[2017-01-20]更新類似，調整預設為連連看(魔導盃)</dd>
+                        </dl>
+                        <dl>
+                            <dt>[2016-11-12] 重新改變架構，與原版[2016-4-15]相似</dt>
+                            <dd>混合 Google spreadsheets與新版架構</dd>
                         </dl>
                     </div>
                 </div>
