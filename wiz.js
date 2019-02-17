@@ -79,8 +79,28 @@ wizLoader = (function() {
 
   wizLoader.option = {
     excelIds: {
+     classify: {
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
+      },
+      fill: {
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
+        gridId: "2"
+      },
+      sort: {
+        sheedId: "1KyjKLU8ADJuXWoML_rIlV4_Iuq-I1-ffdJoFIJh-XRE",
+        gridId: "obmhfwa"
+      },
+      qtemulti: {
+        sheedId: "1Bc8YBk8Ft7r1NLlnnPhqENcF-_Sqgxi_dkOMUTwi9R0",
+        gridId: "ott9syt"
+      },
+      ox: {
+        sheedId: "1BktHsD75dlNaHRYgniYv9vhiCpFNrFS-zmpAbSY8jzs",
+        gridId: "ood9bzs"
+      },
       qte: {
-        sheedId: "10UXXGpmr29PUhDH1AFmLThk2sivTwprRYIg2W3XBWfg",
+        sheedId: "1dfLqv5Tzbel3lgKjltgu-SDeR-_DXVvpgL14WSlv8WA",
         gridId: "1"
       }
     }
@@ -98,7 +118,22 @@ wizLoader = (function() {
     var tmp;
     tmp = data.feed.id.$t.split('/');
     if (tmp.length === 9) {
-      return this._loadNormal([data.feed.entry, '四選題']);
+      if (tmp[6] === 'os8hyc1') {
+        return this._loadNormal([data.feed.entry, '分類題']);
+      }
+      if (tmp[6] === 'o2cw2x5') {
+        return this._loadNormal([data.feed.entry, '填空題']);
+      }
+      if (tmp[6] === 'obmhfwa') {
+        return this._loadNormal([data.feed.entry, '排序題']);
+      }
+      if (tmp[6] === 'ott9syt') {
+        return this._loadNormal([data.feed.entry, 'QTE複選題']);
+      }
+      if (tmp[6] === 'ood9bzs') {
+        return this._loadNormal([data.feed.entry, 'OX題']);
+      }
+      return this._loadNormal([data.feed.entry, 'QTE填空題']);
     }
   };
 
@@ -122,9 +157,24 @@ wizLoader = (function() {
         }
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
-        /*  if (name === '四選題') {
-            tmp['type'] = '四選題';
-          }*/
+          if (name === '分類題') {
+            tmp['type'] = '分類題';
+          }
+          if (name === '填空題') {
+            tmp['type'] = '填空題';
+          }
+          if (name === '排序題') {
+            tmp['type'] = '排序題';
+          }
+          if (name === 'QTE複選題') {
+            tmp['type'] = 'QTE複選題';
+          }
+          if (name === 'OX題') {
+            tmp['type'] = 'OX題';
+          }
+          if (name === 'QTE填空題') {
+            tmp['type'] = 'QTE填空題';
+          }
           tmp['fulltext'] = ("" + tmp['question'] + tmp['answer']).toLowerCase();
           db.push(tmp);
         }
